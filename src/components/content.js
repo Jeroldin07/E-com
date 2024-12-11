@@ -26,27 +26,21 @@ export default function Content() {
 
         <h1 className="mt-5 display-6 sm-12 ">Welcome to Mynthra Grand Festival Session</h1>
     
-        <div>
-        <Carousel>
+        <div className="">
+        <Carousel className="m-auto ms-5">
             <Carousel.Item className="slidcard" interval={2000}>
                 <img className="slidimg" src={slid1} />
-                <Carousel.Caption>
                 
-                </Carousel.Caption>
             </Carousel.Item>
 
             <Carousel.Item className="slidcard" interval={2000}>
                 <img className="slidimg" src={slid2} />
-                <Carousel.Caption>
-              
-                </Carousel.Caption>
+                
             </Carousel.Item>
 
             <Carousel.Item className="slidcard" interval={2000} >
                 <img className="slidimg" src={slid3} />
-                <Carousel.Caption>
                 
-                </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
         </div>
@@ -56,7 +50,7 @@ export default function Content() {
         </div>
 {/* -------------------- */}
 
-        <div className="divcards">
+        <div className="divcards d-sm-none">
            
 
             <div className="divc1">

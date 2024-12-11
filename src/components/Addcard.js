@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { Link } from "react-router-dom";
 
 
 export default function AddCart() {
@@ -32,6 +33,7 @@ return (<>
               <div className="border border-black" style={{width:'480px',padding:'10px'}}>{item.title}</div>
               <div className="border border-black mt-2" style={{width:'480px',padding:'10px'}}> Price: {item.price} / Rating: {item.rating.rate} / Counts: {item.rating.count}</div>
               <div className="bg- mt-2 border border-black" style={{width:'480px',padding:'10px'}}>{item.description}</div>
+              <Link to='/'></Link>
               <Button className="me-3" type="submit">Add</Button>
               <Button type="submit">Remove</Button>
               </div>
